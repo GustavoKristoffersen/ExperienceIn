@@ -18,4 +18,3 @@ def convidar(request, id):
 
 def get_perfil_logado(request):
    return Perfil.objects.get(id=1)
-
