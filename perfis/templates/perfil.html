@@ -1,3 +1,5 @@
+<!-- experiencein/perfis/templates/perfil.html -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -5,10 +7,7 @@
         <title>ExperienceIn</title>
     </head>
     <body>
-         <h1>Detalhe Perfil</h1>
-         nome: {{perfil.nome}}, 
-         email: {{perfil.email}}, 
-         telefone: {{perfil.telefone}}, 
-         empresa: {{perfil.nome_empresa}}
+         <h1>Detalhe Perfil: {{perfil.nome}}</h1>
+         <a href="{% url 'convidar' perfil.id %}">convidar</a>
     </body>
 </html>
