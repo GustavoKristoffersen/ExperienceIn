@@ -6,7 +6,6 @@ def index(request):
 
 def exibir(request, id):
     perfil = Perfil.objects.get(id=id)
-
     perfil_logado = get_perfil_logado(request)
     ja_e_contato = perfil in perfil_logado.contatos.all()
 
